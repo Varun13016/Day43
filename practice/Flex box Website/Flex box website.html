@@ -1,0 +1,93 @@
+<!doctype html>
+<title>Welcome to FLEX BOX EXAMPLE</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 3;
+    min-height: 60vh;
+  }
+  .content > aside {
+    background: beige;
+    flex: 1;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="col-1">Nav
+      <p>1	Overview
+        2	History
+        2.1	Modern developments
+        3	Education
+        3.1	Manufacturing Engineers
+        3.2	Certification Programs
+        3.3	Syllabus
+        4	Manufacturing engineering certification
+        5	Modern tools
+        6	Manufacturing Engineering around the world
+        7	Subdisciplines
+        7.1	Mechanics
+        7.2	Kinematics
+        7.3	Drafting
+        7.4	Machine Tools and Metal Fabrication
+        7.5	Computer Integrated Manufacturing
+        7.6	Mechatronics
+        7.7	Textile engineering
+        7.8	Advanced composite materials
+        8	Employment
+        9	Frontiers of research
+        9.1	Flexible manufacturing systems
+        9.2	Computer integrated manufacturing
+        9.3	Friction stir welding
+        10	See also
+    </p>
+  </nav>
+  <div class="col-2">
+  	<header>Header
+          <p> OVERVIEW OF PRODUCTION </p>
+      </header>
+    <main class="content">
+    <article>Article
+        <p>The history of manufacturing engineering can be traced to factories in the mid 19th century USA and 18th century UK. Although large home production sites and workshops were established in China, ancient Rome and the Middle East, the Venice Arsenal provides one of the first examples of a factory in the modern sense of the word. Founded in 1104 in the Republic of Venice several hundred years before the Industrial Revolution, this factory mass-produced ships on assembly lines using manufactured parts. The Venice Arsenal apparently produced nearly one ship every day and, at its height, employed 16,000 people.
+            Many historians regard Matthew Boulton's Soho Manufactory (established in 1761 in Birmingham) as the first modern factory. Similar claims can be made for John Lombe's silk mill in Derby (1721), or Richard Arkwright's Cromford Mill (1771). The Cromford Mill was purpose-built to accommodate the equipment it held and to take the material through the various manufacturing processes.
+            One historian, Jack Weatherford, contends that the first factory was in Potosí. The Potosi factory took advantage of the abundant silver that was mined nearby and processed silver ingot slugs into coins.
+            British colonies in the 19th century built factories simply as buildings where a large number of workers gathered to perform hand labor, usually in textile production. This proved more efficient for the administration and distribution of materials to individual workers than earlier methods of manufacturing, such as cottage industries or the putting-out system.
+          Cotton mills used inventions such as the steam engine and the power loom to pioneer the industrial factories of the 19th century, where precision machine tools and replaceable parts allowed greater efficiency and less waste. This experience formed the basis for the later studies of manufacturing engineering. Between 1820 and 1850, non-mechanized factories supplanted traditional artisan shops as the predominant form of manufacturing institution.
+          Henry Ford further revolutionized the factory concept and thus manufacturing engineering in the early 20th century with the innovation of mass production. Highly specialized workers situated alongside a series of rolling ramps would build up a product such as (in Ford's case) an automobile. This concept dramatically decreased production costs for virtually all manufactured goods and brought about the age of consumerism.
+        </p>
+    </article>
+    <aside>Aside
+        <img src ="Robotics View.jpg">
+    </aside>
+    </main>
+  	<footer>Footer
+        <p>Thank you</p>
+      </footer>
+  </div>
+</body>
